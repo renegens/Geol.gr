@@ -1,164 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Παρουσίαση Προϊόντων">
-    <meta name="author" content="Geol">
+    <title>Composer</title>
 
-    <title>Ηλεκτρολογικό υλικό - Λάμπες</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/heroic-features.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Jumbotron Header -->
-        <header class="jumbotron hero-spacer">
-            <h1>Ο ειδικός στις Λάμπες</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-            <p><a class="btn btn-primary btn-large">Call to action!</a>
-            </p>
-        </header>
-
-        <hr>
-
-        <!-- Title -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h3>Latest Features</h3>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Page Features -->
-        <div class="row text-center">
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 hero-feature">
-                <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
-                    <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
-
+  </head>
+  <body><!-- NAVBAR -->
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
     </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="e-shop.html">E-shop</a> </li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+            <li><a href="#">Σπότ</a></li>
+            <li><a href="#">Ταινίες</a></li>
+            <li><a href="#">Προβολές</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav><!-- CAROUSEL -->
+<div id="carousel-top" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-top" data-slide-to="1"></li>
+    <li data-target="#carousel-top" data-slide-to="2"></li>
+  </ol>
 
-</body>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="http://lorempixel.com/1920/600/business/Slide" alt="...">
+      <div class="carousel-caption">
+        <h1>At vero eos</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="http://lorempixel.com/1900/600/transport/Slide" alt="...">
+      <div class="carousel-caption">
+        <h1>At vero eos</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </div>
 
+    <div class="item">
+      <img src="http://lorempixel.com/1900/600/nature/Slide" alt="...">
+      <div class="carousel-caption">
+        <h1>At vero eos</h1>
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
+    </div>
+  </div>
+
+  <a class="left carousel-control" href="#carousel-top" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-top" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div><div class="container">
+  <div class="jumbotron text-center">
+    <h1>Jumbotron heading</h1>
+    <p class="text-center">This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p class="text-center">
+      <a href="#" class="btn btn-primary btn-lg" role="button">Learn more �</a>
+    </p>
+  </div>
+</div><div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="img-square img-responsive center-block" alt="600x300" src="http://lorempixel.com/600/300/sports" />
+    </div>
+
+    <div class="col-md-6">
+      <h1 class="text-left">Heading</h1>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+    </div>
+  </div>
+</div><div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="text-left">Heading</h1>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p class="text-left">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+    </div>
+
+    <div class="col-md-6">
+      <img class="img-square img-responsive center-block" alt="600x300" src="http://lorempixel.com/600/300/nature" />
+    </div>
+  </div>
+</div><div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <div class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/city" alt="" />
+        <div class="caption">
+          <h4>Thumbnail label</h4>
+          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-primary">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/business" alt="" />
+        <div class="caption">
+          <h4>Thumbnail label</h4>
+          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-primary">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/technics" alt="" />
+        <div class="caption">
+          <h4>Thumbnail label</h4>
+          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-primary">Buy</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <div class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/300/200/people" alt="" />
+        <div class="caption">
+          <h4>Thumbnail label</h4>
+          <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <p><a href="#" class="btn btn-primary">Buy</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <a href="#" class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/600/300/transport/Slide" alt="" />
+      </a>
+      <h2>2 Columns</h2>
+      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+      <p><a class="btn btn-default btn-lg" href="#">View details &raquo;</a></p>
+    </div>
+    <div class="col-lg-6">
+      <a href="#" class="thumbnail">
+        <img class="img-square img-responsive" src="http://lorempixel.com/600/300/nature/Slide" alt="" />
+      </a>
+      <h2>2 Columns</h2>
+      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+      <p><a class="btn btn-default btn-lg" href="#">View details &raquo;</a></p>
+    </div>
+  </div>
+</div><div class="container">
+  <div class="row">
+    <h1 class="text-center">Contact Us</h1>
+    <hr />
+    <div class="col-sm-6 col-sm-offset-3">
+      <form id="" method="post" class="form" role="form">
+        <div class="row">
+          <div class="col-xs-6 col-md-6 form-group">
+            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required autofocus />
+          </div>
+          <div class="col-xs-6 col-md-6 form-group">
+            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required />
+          </div>
+        </div>
+        <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"></textarea>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 form-group">
+            <button class="btn btn-primary btn-block" type="submit">Send</button>
+          </div>
+        </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div><h2>About</h2></div>  
+      <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>    
+
+      <div><h2>Newsletter</h2></div> 
+      <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Email Address">                            
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Subscribe</button>
+          </span>
+        </div>                  
+      </form>                         
+    </div> 
+
+    <div class="col-md-4">
+        <div><h2>Blog Posts</h2></div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img src="http://lorempixel.com/g/60/60/business" alt="" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Lorem Ipsum</h4>
+            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
+          </div>
+        </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img src="http://lorempixel.com/g/60/60/transport" alt="" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Lorem Ipsum</h4>
+            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
+          </div>
+        </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img src="http://lorempixel.com/g/60/60/city" alt="" />
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Lorem Ipsum</h4>
+            <p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id erat.</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+      <div><h2>Contacts</h2></div> 
+      <address>
+        11, I do not Know<br />
+        New York, US <br />
+        Phone: 999 153 2346 <br />
+        Fax: 951 373 5432 <br />
+        Email: <a href="mailto:info@yourdomain.com" class="">info@yourdomain.com</a>
+      </address>
+
+      <div><h2>Socials</h2></div> 
+        <a href="#"><img src="./img/social/Facebook.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Twitter.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Google+.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Pinterest.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Linkedin.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Myspace.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Dribbble.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Youtube.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Flickr.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Tumblr.png" alt="" /></a>
+    </div>
+  </div>
+</div> <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <em>&copy;copyright 2014 all rights reserved</em>
+    </div>
+    <div class="col-md-6">
+      <p class="text-right">
+        <a href="#"><img src="./img/social/Facebook.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Twitter.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Google+.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Pinterest.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Linkedin.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Myspace.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Dribbble.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Youtube.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Flickr.png" alt="" /></a>
+        <a href="#"><img src="./img/social/Tumblr.png" alt="" /></a>
+      </p>
+    </div>
+  </div>
+</div>    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <div class="row"><div class="col-md-12"><p class="text-center"><a href="http://www.dragsponsive.com" target="_blank">powered by dragsponsive.com</a></p></div></div>
+  </body>
 </html>
